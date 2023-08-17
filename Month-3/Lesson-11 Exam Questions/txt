@@ -1,0 +1,91 @@
+from abc import ABC, abstractmethod
+import random
+import english_words
+
+class Game(ABC):
+    def __init__(self):
+        self.scores = 0
+
+    @abstractmethod
+    def start(self):
+        pass
+
+    @abstractmethod
+    def isFinished(self):
+        pass
+
+class Easy(Game):
+    def __init__(self):
+        super().__init__()
+
+    def start(self):
+        print("Easy level selected.")
+        word = random.choice(list(english_words.english_words_lower_alpha_set))
+        self.play(word, 6)
+
+    def isFinished(self):
+        return False
+
+    def play(self, word, max_attempts):
+        attempts = 0
+        guessed_letters = []
+
+        while attempts < max_attempts:
+            guess = input("Enter a letter: ")
+
+            if guess in word:
+                print("Correct guess!")
+                guessed_letters.append(guess)
+                if len(guessed_letters) == len(set(word)):
+                    print("Congratulations! You found the word:", word)
+                    self.scores += 1
+                    break
+            else:
+                print("Wrong guess!")
+                attempts += 1
+
+            print("Guessed letters:", guessed_letters)
+
+        if attempts == max_attempts:
+            print("Out of attempts. Game over.")
+
+        self.continue_game()
+
+    def continue_game(self):
+        choice = input("Do you want to play again? (yes/no): ")
+
+        if choice.lower() == "yes":
+            self.start()
+        else:
+            print("Game over. Your final score is:", self.scores)
+
+class Medium(Easy):
+    def __init__(self):
+        super().__init__()
+
+    def start(self):
+        print("Medium level selected.")
+        word = random.choice(list(english_words.english_words_lower_alpha_set))
+        while len(word) > 9:
+            word = random.choice(list(english_words.english_words_lower_alpha_set))
+        self.play(word, 9)
+
+    def isFinished(self):
+        return False
+
+class Hard(Medium):
+    def __init__(self):
+        super().__init__()
+
+    def start(self):
+        print("Hard level selected.")
+        word = random.choice(list(english_words.english_words_lower_alpha_set))
+        while len(word) <= 9:
+            word = random.choice(list(english_words.english_words_lower_alpha_set))
+        self.play(word, 9)
+
+    def isFinished(self):
+        return True
+
+easy_game = Easy()
+easy_game.start()

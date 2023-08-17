@@ -1,0 +1,123 @@
+Python Django 3-oy Oraliq imtihoni
+Baholash va ajaratilgan vaqt:
+Masalalar: 60 ball	Vaqt: 2:00 soat
+Interview: 20	 ball	Vaqt: 10 daqiqa
+Uyga vazifalar: 10 ball
+Davomat: 10 ball
+Umumiy ball: 100
+Baholash:
+T1: 10
+T2:15
+T3:20
+T4:15
+Masalalar
+Variant A
+1. input.txt faylida bir nechta qator bor. Shu qatorlar sonini va qatorlarning har birida nechtadan so'z borligini list ko’rinishida chiqaring.
+
+Input.txt
+stdout
+Salom hammaga!
+Bugungi imtihonda hammaga omad!
+Shoshilmasdan fikrlab masalalarni ishlang!
+Qator = 3 ta
+Sozlar = [2,4,4]
+
+
+2. harflar.txt fayl yaratib uni 30 ta katta va kichik random harflar bilan to'ldiring. Foydalanuvchidan 1 qatorda vergul orqali so’zlar kiritishni so'rang. Fayldagi harflardan foydalanib, foydalanuvchi kiritgan nechta so'zni yasab bo'lishi va bu so’zlar qaysilar ekanligini  chiqaruvchifunksiya tuzing. Katta va kichik registrdagi bir xil harflarni teng qiymatli deb olishingiz mumkin.
+
+harflar.txt
+stdin
+stdout
+znMGREsQaOaYDYIxWoOaBrvBEkOdcV
+book,Win,Python
+2
+book
+Win
+
+
+
+3.  Mashina nomli  class  yarating. Unda model, rang nomli protected turdagi propertylar bo'lsin. Getter va setter funksiyalarini tuzib undan SportCar nomli voris  class oling. Voris class da getInfo nomli funksiya bo'lsin. getInfo funksiyasi qiymatlarni getter funksiyalardan olsin. SportCar dan 2 ta object olib ularga qiymatlarni input qiling va getInfo orqali chop eting. Berilgan qiymatlarni o’zgartirib yangi qiymatlarni ham chop eting.
+
+code
+stdout
+……
+print(obj1.getInfo())
+print(obj2.getInfo())
+……..
+print(obj1.getInfo())
+print(obj2.getInfo())
+BMW Black
+Ferrari Yellow
+
+BMW Yellow
+Ferrari Red
+
+
+
+4. Laptop nomdagi abstract class yarating va 2 ta abstract metod(‘GetModel’, ‘GetPrice’) qo’shing. Undan Voris class olib, abstrakt metodlarni qayta yozing. Voris classdan 3 ta obyekt oling. Obyektlarning har biri uchun qiymatlar kiritib, 2 tadan funksiyalarini chaqiring.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Varinat B
+
+1. input.txt da bir nechta qator berilgan. Shu qatorlardan o'rtadagisini chiqaring va undagi har bir so’zning harflari sonini tuple ko’rinishida qaytaruvchi funksiya tuzing. Agar qatorlar soni juft bo'lsa o'rtada turgan 2 qatorni probel orqali birlashtirib yuqoridagi shartlarni bajaring.
+
+Input.txt
+stdout
+Salom hammaga!
+Bugungi imtihonda hammaga omad!
+Shoshilmasdan fikrlab masalalarni ishlang!
+Bugungi imtihonda hammaga omad!
+Sozlardagi harflar = (7,9,7,5)
+
+
+2. foydalanuvchidan 1 qator gap kiritishini so'rab gapdagi undosh harflarni undosh.txt qolgan belgilarni *, unli harflarni unli.txt qolgan belgilarni esa * bilan almashtirib 2 ta faylga malumotni yozing.
+
+stdin
+undosh.txt
+unli.txt
+It is just Text!
+*t *s j*st T*xt*
+I* i* *u** *e***
+
+
+3.  Laptop nomli  class  yarating. Unda model, rang nomli protected turdagi propertylar bo'lsin. Getter va setter funksiyalarini tuzib undan HP nomli voris  class oling. Voris class da getInfo nomli funksiya bo'lsin. getInfo funksiyasi qiymatlarni getter funksiyalardan olsin. HP dan 2 ta object olib ularga qiymatlarni input qiling va getInfo orqali chop eting. Berilgan qiymatlarni o’zgartirib yangi qiymatlarni ham chop eting.
+
+
+code
+stdout
+……
+print(obj1.getInfo())
+print(obj2.getInfo())
+……..
+print(obj1.getInfo())
+print(obj2.getInfo())
+Pavilion Silver
+Victus Black
+
+Pavilion Black
+Victus Gold
+
+
+4. Car nomdagi abstract class yarating va 2 ta abstract metod(‘GetModel’, ‘GetPrice’) qo’shing. Undan Voris class olib, abstrakt metodlarni qayta yozing. Voris classdan 3 ta obyekt oling. Obyektlarning har biri uchun qiymatlar kiritib, 2 tadan funksiyalarini chaqiring.

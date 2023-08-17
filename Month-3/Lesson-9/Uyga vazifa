@@ -1,0 +1,36 @@
+# Uyga Vazifa:
+ "ToDo" => kunlik qiladigan ishlar royxati
+
+#Toliq takrorlash uchun
+1. "ToDo" nomli class tuzing. "add_task", "completed", "show_tasks" nomli metodlar qo'shing!
+"show_tasks" chaqirilganda misol uchun output:
+        -----------------------------
+        1. Play a guitar
+        2. Go to the gym
+        3. Have a dinner
+        -----------------------------
+        Input: add Play a football
+        Output: task is added
+        Input: show
+         -----------------------------
+        1. Play a guitar
+        2. Go to the gym
+        3. Have a dinner
+        4. Play a football
+        -----------------------------
+        Input: completed 3
+        Output: "Have a dinner" task is deleted
+        Input: show
+         -----------------------------
+        1. Play a guitar
+        2. Go to the gym
+        3. Play a football
+        -----------------------------
+        Input: stop
+        Output: Good bye
+        ------------------------------------------
+
+
+
+note! getter, setter metodlarni ishlatilsa ham boladi, har bitta metod filega ulangan bolishi kkk.
+initda => "tasks" degan boshlangich qiymat berib qoysa ham boladi.
